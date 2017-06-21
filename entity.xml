@@ -1,0 +1,41 @@
+<Entity-description>
+   <Term name="Blocks">
+       <Proc name="block_extractor">
+	        <SummaryBlock>Summary,Objective,Goal,Aim</SummaryBlock>
+            <SkillsBlock>Skill,Skills</SkillsBlock>
+	        <EmploymentBlock>Employment,History,Work,Experience</EmploymentBlock>
+            <EducationBlock>Education,Qualification</EducationBlock>
+       </Proc>
+   </Term>
+   
+
+
+   <Term name="Basicinfo">
+        <Proc name="singlevalue" block="">
+	        <Name>(^(Name:\s*)?(.+))</Name>
+	        <Email>((\w+[.|\w])*@(\w+[.])*\w+)</Email>
+	        <Email>([A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4})</Email>
+	        <Phone>(^(?:(?:\+|0{0,2})91(\s*[\-]\s*)?|[0]?)?[789]\d{9}$)</Phone>
+	        <Address>Address:(.+)</Address>
+        </Proc>
+   </Term>
+
+   <Term name="Education">
+        <Proc name="block_value" block="EducationBlock">
+	        <Secondary>10th,X,Matric,SSC</Secondary>
+	        <HigherSecondary>12th,XII,HSC</HigherSecondary>
+	        <UnderGrad>BE,B.E,BTech,B.Tech,BS,Computer Science,IT</UnderGrad>
+        </Proc>
+   </Term>
+
+   <Term name="Skills">
+        <Proc name="block_value" block="SkillsBlock">
+	        <Certifications>CISCO CERTIFIED NETWORK ASSOCIATE (CCNA),CISCO CERTIFIED NETWORK PROFESSIONAL ROUTING AND 		SWITCHING (CCNP),CISCO CERTIFIED NETWORK ASSOCIATE SECURITY CREDENTIAL (CCNA),MICROSOFT CERTIFIED SOLUTIONS 		DEVELOPER FOR WEB APPLICATIONS (MCSD),MICROSOFT CERTIFIED SOLUTIONS ASSOCIATE WINDOWS SERVER 2012 (MCSA),COMPTIA�S 	SECURITY+,CERTIFIED SCRUMMASTER (CSM),Red Hat Certified Engineer (RHCE)</Certifications>
+    
+	        <QA>Selenium,Selenium Grid,Cucumber,Jenkins,Robot,AutoIT,SilkTest,JMeter</QA>
+	        <Programming>C,C++,Java,Python,Perl,Ruby,R,Go,Javascript,C#,PHP</Programming>
+        </Proc>
+   </Term>
+
+
+</Entity-description>
